@@ -1,0 +1,6 @@
+__pycache__
+*.pyc
+*.txt
+__pycache__/
+TestKicadPrj/
+.vscode/
