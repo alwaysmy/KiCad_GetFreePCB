@@ -41,18 +41,18 @@ class Dialog(wx.Dialog):  # 继承 wx.Dialog
         main_sizer = wx.BoxSizer(wx.VERTICAL)
 
         # 添加提示文本
-        text = wx.StaticText(self, label="请选择操作：")
-        main_sizer.Add(text, 0, wx.ALL | wx.CENTER, 10)
+        text = wx.StaticText(self, label="选择操作：")
+        main_sizer.Add(text, 0, wx.ALL | wx.CENTER, 20)
 
         # 创建按钮：选择已有 Gerber
         btn_select_gerber = wx.Button(self, label="选择已有 Gerber")
         btn_select_gerber.Bind(wx.EVT_BUTTON, self.on_select_gerber)
-        main_sizer.Add(btn_select_gerber, 0, wx.ALL | wx.EXPAND, 10)
+        main_sizer.Add(btn_select_gerber, 0, wx.ALL | wx.EXPAND, 20)
 
         # 创建按钮：直接生成 Gerber
         btn_generate_gerber = wx.Button(self, label="直接生成 Gerber")
         btn_generate_gerber.Bind(wx.EVT_BUTTON, self.on_generate_gerber)
-        main_sizer.Add(btn_generate_gerber, 0, wx.ALL | wx.EXPAND, 10)
+        main_sizer.Add(btn_generate_gerber, 0, wx.ALL | wx.EXPAND, 20)
 
         # 设置主布局
         self.SetSizer(main_sizer)
@@ -215,7 +215,7 @@ class GiveMeFreePCB(pcbnew.ActionPlugin):
         self.name = "马上白嫖"
         self.category = "生产制造"
         self.description = "伪装成JLCEDA的Gerber"
-        self.icon_file_name = os.path.join(os.path.dirname(__file__), "icon.png")
+        self.icon_file_name = os.path.join(os.path.dirname(__file__), "icon1.png")
         self.show_toolbar_button = True
 
     # 在用户操作时执行的插件的入口函数
