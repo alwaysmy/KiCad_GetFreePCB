@@ -1,0 +1,6 @@
+G04 Layer: BottomLayer*
+G04 EasyEDA Pro v2.2.36.7, 2025-02-28 19:05:07*
+G04 Gerber Generator version 0.3*
+G04 Scale: 100 percent, Rotated: No, Reflected: No*
+G04 Dimensions in millimeters*
+G04 Leading zeros omitted, absolute positions, 4 integers and 5 decimals*
